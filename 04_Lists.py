@@ -145,3 +145,22 @@ print("linear_vector= [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,] -->", linear_vector)
 
 even_square_vector = [x**2 for x in linear_vector if x % 2 != 0 ]
 print("even_square_vector = [x**2 for x in linear_vector if x % 2 != 0 ] -->", even_square_vector)
+
+from math import pi
+print("[str(round(pi, i)) for i in range(1, 6)] -->",[str(round(pi, i)) for i in range(2, 10)])
+
+# Nested Lists
+print("\n")
+print('\033[1m' + "Mested Lists" + '\033[0m')
+
+matrix = [
+    [1, 2, 3, 4],
+    [5, 6, 7, 8],
+    [9, 10, 11, 12],
+]
+print("3 by 4 matrix", matrix)
+
+transposed_matrix = [[row[i] for row in matrix] for i in range(4)]
+print("transposed matrix 4 by 3 -->", transposed_matrix)
+
+print("transpose matrix 4 by 3 using zip-->", list(zip(*matrix)))
