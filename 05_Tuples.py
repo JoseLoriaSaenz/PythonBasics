@@ -68,4 +68,7 @@ print("my_tuple = list(my_tuple) -->", my_tuple, "Type:", type(my_tuple))
 my_tuple = tuple(my_tuple)
 print("my_tuple = tuple(my_tuple) -->", my_tuple, "Type:", type(my_tuple))
 
+# Comprehensions tuple
+print("\n")
+print('\033[1m' + "Comprehensions tuple" + '\033[0m')
 print("[\"-\" + str(x*2) + \"-\" for x in my_tuple] --> ",["-" + str(x*2) + "-" for x in my_tuple])
