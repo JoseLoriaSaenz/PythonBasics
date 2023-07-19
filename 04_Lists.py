@@ -129,3 +129,19 @@ print("my_list_as_queue.pop() -->", my_list_as_queue)
 print("### Dequeue element at front ###")
 my_list_as_queue.popleft()
 print("my_list_as_queue.appendleft() -->", my_list_as_queue)
+
+# List Comprehensions
+print("\n")
+print('\033[1m' + "Lists Comprehensions" + '\033[0m')
+
+my_special_list = [x**2 for x in range(5)]
+print("my_special_list = [x**2 for x in range(5)] -->", my_special_list)
+
+my_special_list_2 = ["a"*x for x in range(10)]
+print("my_special_list = [x**2 for x in range(10)] -->", my_special_list_2)
+
+linear_vector= [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,]
+print("linear_vector= [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,] -->", linear_vector)
+
+even_square_vector = [x**2 for x in linear_vector if x % 2 != 0 ]
+print("even_square_vector = [x**2 for x in linear_vector if x % 2 != 0 ] -->", even_square_vector)
