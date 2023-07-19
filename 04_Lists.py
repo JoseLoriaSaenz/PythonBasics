@@ -77,7 +77,7 @@ print("\n")
 print('\033[1m' + "Destructuring Lists" + '\033[0m')
 
 a, b, c = my_multitype_list
-print("a, b, c = my_multitype_list -->", "list:", my_multitype_list, "Destructured", a, b, c)
+print("a, b, c = my_multitype_list -->", "list:", my_multitype_list, "Destructured", "a =", a, "b =", b, "c =", c)
 
 print("### Create a List assignning multiple variables ###".upper())
 my_constructed_list = b, c, a
