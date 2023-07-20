@@ -34,7 +34,7 @@ print("using **object -->", "My name is {Name}. I'm {Age} y/o".format(**person_v
 
 print("")
 print('\033[1m' + "Simplified String Format" + '\033[0m')
-print("using F or f prefix", F"My name is {name} {surname}. I was born on {dob}", , f"Person var Age property: {person_var['Age']}")
+print("using F or f prefix", F"My name is {name} {surname}. I was born on {dob}", f"Person var Age property: {person_var['Age']}")
 
 print("")
 print('\033[93m' + '\033[1m' + "Date Formatting" + '\033[0m')
