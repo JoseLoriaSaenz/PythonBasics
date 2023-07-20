@@ -238,6 +238,64 @@ def order_hamburguer(type: str, with_chesse: bool, *ingredients, **hold_ingredie
 print('order_hamburguer("Double Decker", True, "Tomato", "Lettuce", "Onion", "Kale", Ketchup="no", Mustard="yes", Pickles="yes" )')
 order_hamburguer("Double Decker", True, "Tomato", "Lettuce", "Onion", "Kale", Ketchup="no", Mustard="yes", Pickles="yes", Mayonnaise="no")
 
+# Wrapper Function
+
+
+# Lambda Function
+print("")
+print('\033[1m' + "Lambda Function" + '\033[0m')
+
+lambda_func = lambda x : x**2
+print('lambda_func = lambda x : x**2')
+print('lambda_func(10) --> ', lambda_func(10))
+
+# Higher Order Functions
+print("")
+print('\033[1m' + "Higher Order Functions" + '\033[0m')
+
+print('''
+      def HOF_1(number: int):
+        return number**2
+
+      def HOF_2(f, n):
+        return f(n)
+
+      print(print(HOF_2(HOF_1, 4))) --> 16
+      ''')
+
+def HOF_1(number: int):
+    return number**2
+
+def HOF_2(f, n):
+    return f(n)
+
+print(HOF_2(HOF_1, 4))
+
+
+# Decorators or Wrappers
+print("")
+print('\033[1m' + "Decorators or Wrappers" + '\033[0m')
+
+def pow3(func):
+    def inner1(number: int):
+        x = float(func(number)**3)
+        return x
+    return inner1
+
+def add10(func):
+    def inner1(number: int):
+        x = float(func(number)+10)
+        return x
+    return inner1
+ 
+@add10
+@pow3
+def my_func(number: int):
+    return number
+    
+print(my_func(2))
+
+quit()
 # Recursive function
 print("")
 print('\033[1m' + "Recursive function" + '\033[0m')
