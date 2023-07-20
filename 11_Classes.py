@@ -87,6 +87,8 @@ e.department = "Accounting"
 e.salary = 100
 e._salary = 1000
 
+print("e.salary -->", e.salary)
+
 
 print("")
 print('Is an instance of Person and Employee')
@@ -119,8 +121,3 @@ c.address = "Main Street"
 
 o = c.object()
 print(o)
-
-
-
-        
-    
