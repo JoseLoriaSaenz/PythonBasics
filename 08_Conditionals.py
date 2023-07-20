@@ -89,3 +89,20 @@ elif letter == "b":
     print("letter == \"b\" -->", letter == "b", "letter:",  letter)
 else:
     print("niether a or b letter -->", letter)
+
+
+# match
+print("")
+print('\033[1m' + "match" + '\033[0m')
+
+number = int(input("Type a number between (1 and 3): "))
+
+match number:
+    case 1:
+        print("You selected 1")
+    case 2:
+        print("You selected 2")
+    case 3:
+        print("You selected 3")
+    case _:
+        print(number, "is an invalid number")
