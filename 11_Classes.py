@@ -110,7 +110,7 @@ class ClassC(ClassA, ClassB):
     address: str
     
     def object(self):
-        return {'Id':'{self.id}', 'Name':'{self.name}', 'Address': '{self.address}'}
+        return {'Id': self.id, 'Name': self.name, 'Address': self.address}
 
 c = ClassC()
 c.id = 1
